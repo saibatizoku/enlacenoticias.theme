@@ -1,0 +1,392 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('/assets/fonts/BebasNeue-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('/assets/fonts/BebasNeue-webfont.eot') format('eot'),
+         url('/assets/fonts/BebasNeue-webfont.woff') format('woff'),
+         url('/assets/fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('/assets/fonts/BebasNeue-webfont.svg#webfontfvFLBU0N') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { background: none repeat scroll 0 0 transparent; border: 0 none; font-size: 100%; margin: 0; outline: 0 none; padding: 0; vertical-align: baseline; }
+
+html { height: 100%; min-height: 100%; background: none repeat scroll 0 0 #f4f4f4; }
+
+body { color: #323232; min-height: 100%; font: 12px/14px Arial,Helvetica,sans-serif; position: relative; }
+
+* { margin:0; padding:0; }
+
+a { color: #646464; text-decoration:none; }
+a:hover { color: #cb260a; text-decoration:none; }
+li { list-style:none; }
+.readmore { font-size: 11px; }
+.readmore a { color:#c1272d; }
+.readmore a:hover { color:#9c191e; }
+
+.wrapper { margin: 0 auto; width: 980px; }
+
+#absolute { left: 0; position: absolute; top: 0; width: 100%; z-index: 15; }
+
+#banner_leaderboard { width: 728px; height: 90px; background: #e4e4e4; margin: 10px auto; }
+#banner { width: 468px; height: 60px; background: #e4e4e4; margin: 10px auto; }
+
+#logo { margin: 20px auto 10px; text-align: center; }
+
+#search { background: url("/assets/images/lupa.png") no-repeat scroll right 0 transparent; top: 165px; position: absolute; right: 0; width: 214px; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { #search { background: url("/assets/images/lupa.png") no-repeat scroll right 2px transparent; padding: 0 20px 0 0; } }
+
+#ie7 #search { background: url("/assets/images/lupa.png") no-repeat scroll right 1px transparent; }
+
+#ie8 #search, #ie7 #search { padding:0 18px 0 0; }
+
+.searchbox { border: 1px solid #3b3a3b; }
+
+#header { clear: both; /*height: 190px;*/ margin: 0; padding: 0; position: relative; z-index: 10; }
+
+#tools { height: 37px; background: url("/assets/images/tools_ti_background.png") no-repeat scroll 0 0 transparent; }
+.tools-ti { background: url("/assets/images/tools_background.png") repeat-x scroll 0 bottom #cb260a; height: 37px; }
+.tools-td { background: url("/assets/images/tools_td_background.png") no-repeat scroll right 0 transparent; padding: 0 4px;}
+
+#menu { background: url("/assets/images/menu_background.png") repeat-x scroll 0 bottom #CB260A; height: 41px; }
+#menu ul { height: 41px; margin: 0; padding: 13px 0; }
+#menu li { display:inline; }
+#menu li a { color: #ffffff; padding: 12px 15px 12px 10px; background: url("/assets/images/menu_div.png") no-repeat scroll right 0 transparent; margin: 0 -4px 0 0; }
+#menu li a:hover { color: #e4e4e4; padding: 12px 15px 12px 10px; background: #991904; }
+#menu span {  }
+
+#menu-bottom { height: 3px; background: url("/assets/images/menu_low_background.png") repeat-x scroll 0 bottom #3a3a3a; }
+#menu_bottom { height: 31px; background: url("/assets/images/menu_bottom_bi_background.png") no-repeat scroll 0 0 transparent; }
+.menu_bottom-bi { background: url("/assets/images/menu_bottom_background.png") repeat-x scroll 0 bottom #3a3a3a; height: 23px; padding: 8px 0 0 8px; font-size: 11px; }
+.menu_bottom-bd { background: url("/assets/images/menu_bottom_bd_background.png") no-repeat scroll right 0 transparent; padding: 0 4px;}
+.menu_bottom_rojo { color: #c1272d; font-weight:bold;}
+.menu_bottom_blanco { color: #fff; font-weight:bold;}
+.menu_bottom_title { color: #c1272d; font-weight:bold; }
+.menu_bottom_texto { }
+.menu_bottom_texto a { color: #fff; }
+.menu_bottom_texto a:hover { color: #e4e4e4; text-decoration:underline; }
+
+#fecha { color: #ffffff; font-weight: bold; padding: 13px 0 0 8px; float:left; font-weight:bold; }
+
+#redessociales { float:right; padding: 8px; }
+#redessociales ul {  }
+#redessociales li { list-style:none; display:inline; }
+
+.clear { clear:both; }
+#ie8 .clear { clear:both; height:1px; }
+#ie7 .clear { clear:both; height:1px; }
+
+.separador { height: 13px; background: url("/assets/images/separador.png") repeat-x scroll 0 0 transparent;}
+
+.left { float:left; }
+
+#MainContent, #bottom { margin:0 auto; padding:0; }
+#NewsTop { height: 100%; }
+#ie8 #NewsTop { margin: 0 0 10px 0; }
+#ie7 #NewsTop { height: 100% !important; }
+@media screen and (-webkit-min-device-pixel-ratio:0) { #NewsTop { height: 100% !important; } }
+#NewsTop1 { width: 470px; height: 370px; margin: 0 10px 0 0; background: #f7f7f7; border:10px solid #ffffff; }
+#NewsTop1-1 { width: 275px; height: 370px; margin: 0 10px 0 0; background: #666; }
+#NewsTop1-1 .overlay {
+    background: none repeat scroll 0 0 #000000;
+    bottom: 145px;
+    height: 145px;
+    opacity: 0.7;
+    position: relative;
+    width: 275px;
+	filter: alpha(opacity = 50);
+}
+
+#ie7 #NewsTop1-1 .overlay { bottom: 148px; }
+
+#NewsTop1-2 { float: left; width: 175px; margin: 10px 10px 0 0; }
+#NewsTop1-2 ul {}
+#NewsTop1-2 li { border-bottom: 1px solid #E4E4E4; list-style: none outside none; margin: 0 0 20px; padding: 0 0 10px; }
+
+#NewsTop1-2 li.last { border-bottom: none !important; list-style: none outside none; margin: 0 0 20px; padding: 0 0 10px; }
+
+#NewsTop1-2 li h1, #bottom h2, #NotaSeccion h1 { color: #231F20; font-family: BebasNeue,Arial,sans-serif; font-size: 18px; margin-bottom: 10px; font-weight: normal; line-height:18px; }
+
+#ie8 #NewsTop1-2 li h1 { line-height:16px; letter-spacing:-0.4px; }
+
+
+#NewsTop1-2 li span, #NewsTop2 span { font-size:11px; }
+
+
+#NewsTop2 { width: 215px; height: 370px; margin: 0 10px 0 0; background: #ffffff; padding:10px;}
+#NewsTop2 h1, #MainBlockContent-col3 .content h1 { color: #c9260a; font-family: BebasNeue,Arial,sans-serif; font-size: 16px; margin-bottom: 10px; font-weight: normal; line-height:18px;  }
+#NewsTop2 .titulo, #MainBlockContent-col3 .content h1 { border-bottom: 1px solid #d1d1d1; color: #231F20; }
+#NewsTop2 img { margin: 0 0 10px 0; }
+#NewsTop2 ul { margin: 10px 0 0 0; }
+#NewsTop2 li { font-size:10px; padding: 0 0 10px 10px; background: url("/assets/images/bullet.png") no-repeat scroll 0 20% transparent;}
+
+#NewsTop3 { width: 235px; height: 390px; margin: 0; background: #ffffff; }
+#NewsTop3 img { padding: 0 0 2px 0; }
+#ie7 #NewsTop3 img { padding: 0 0 0 0; margin:-1px 0 0 0; }
+#NewsTop3 .last { padding: 0; }
+
+#notaimagen { margin: 10px 0; background: #ffffff; }
+#ie8 #notaimagen, #ie7 #notaimagen { margin: 10px 0 0 0; }
+
+
+
+#MainBlockContent { height: 100%; margin: 10px 0; overflow: hidden; padding: 0; }
+#MainBlockContent-2cols { width:670px; margin: 0 10px 0 0; background:#ffffff; }
+#MainBlockContent-col1 { width:200px; margin: 0 20px 0 0; /*background:#999;*/ min-height: 250px;}
+#MainBlockContent-col2 { width:450px; margin: 0; /*background:#666;  min-height: 250px;*/ }
+#MainBlockContent-col3 { width:300px; margin: 0; /*background:#e4e4e4;  min-height: 250px;*/ }
+#MainBlockContent-col3 h1 {  }
+
+
+.moduleColIzq { margin: 0 0 10px 0; background: #e4e4e4; width: 200px; min-height:200px; }
+.moduleColDer { margin: 0 0 10px 0; background: #ffffff; width: 300px; min-height:150px; }
+.moduleColDer .content, .moduleColIzq .content { padding:10px; }
+
+
+
+#lomas { font-size: 11px; margin: 0; padding: 0; }
+#lomas img { float:left; margin: 0 10px 0 0; }
+#lomas span { line-height: 12px; }
+#lomasNota { /*margin: 0 0 5px; min-height: 40px;*/ }
+
+
+
+#Seccion { padding: 20px 20px 0 0; overflow:hidden; }
+#Seccion h2 { font-family: BebasNeue,Arial,sans-serif; font-size:22px; border-bottom: 2px solid #e0e0e0; padding: 0 0 10px 0; margin: 0 0 10px 0; font-weight:normal; }
+
+#NotaSeccion { width: 230px; margin:0 10px 0 0;}
+#NotaSeccion img { padding: 0 0 10px 0; }
+
+#NotasSeccion { width: 190px; }
+#NotasSeccion ul {  }
+#NotasSeccion li { border-bottom: 1px solid #E0E0E0; margin: 0 0 20px; padding: 0 0 10px; }
+#NotasSeccion li h1 { font-weight: bold; padding: 0 0 10px 0;}
+
+
+.finanzas { border-bottom: 2px solid #4d7601 !important; }
+.finanzasTitulo { color: #4d7601 !important; }
+
+
+.cultura { border-bottom: 2px solid #e5881b !important; }
+.culturaTitulo { color: #e5881b !important; }
+
+
+.deportes { border-bottom: 2px solid #004488 !important; }
+.deportesTitulo { color: #004488 !important; }
+
+
+
+
+#bottom { min-height:250px; border-top: 2px solid #8b898a; }
+.bottom-columna { background: url("/assets/images/bottom_div.png") no-repeat scroll right 30px transparent; float: left; margin: 10px 10px 0 0; min-height: 255px; padding: 0 10px 0 0; width: 225px; }
+#bottom .last { background: none transparent; }
+
+#bottom h2 { font-size: 22px; line-height: 20px; }
+#bottom img { border:1px solid #dadada; padding:5px; margin: 0 0 10px 0; }
+
+#bottom .fecha_publicacion, #lomas .fecha_publicacion { color:#c1272d; font-size: 11px; }
+
+#footer { min-height:100px; text-align:center; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TOOLS*/
+
+/*SCROLLABLE*/
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+
+
+
+.scrollable {
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+    width: 936px;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+.items div {
+	float:left;
+	width:520px;
+}
+
+/* single scrollable item */
+.scrollable img {
+    float: left;
+    height: 70px;
+    margin: 10px 5px 0 0;
+    width: 125px;
+}
+
+/* active item 
+.scrollable .active {
+	border:2px solid #000;
+	position:relative;
+	cursor:default;
+}*/
+
+
+
+
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+	float:left;	
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+	background:url(/assets/images/hori_large.png) no-repeat;
+	display:block;
+	width:17px;
+	height:17px;
+	float:left;
+	margin:36px 0px;
+	cursor:pointer;
+	font-size:1px;
+}
+
+/* right */
+a.right 				{ background-position: 0 -17px; clear:right; margin-right: 0px;}
+a.right:hover 		{ background-position:-17px -17px; }
+a.right:active 	{ background-position:-34px -17px; } 
+
+
+/* left */
+a.left				{ margin-left: 5px; } 
+a.left:hover  		{ background-position:-17px 0; }
+a.left:active  	{ background-position:-34px 0; }
+
+/* up and down */
+a.up, a.down		{ 
+	background:url(/assets/images/scrollable/arrow/vert_large.png) no-repeat; 
+	float: none;
+	margin: 10px 50px;
+}
+
+/* up */
+a.up:hover  		{ background-position:-17px 0; }
+a.up:active  		{ background-position:-34px 0; }
+
+/* down */
+a.down 				{ background-position: 0 -17px; }
+a.down:hover  		{ background-position:-17px -17px; }
+a.down:active  	{ background-position:-34px -17px; } 
+
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+} 	
+
+
+
+
+/*TABS*/
+
+
+/* root element for tabs  */
+ul.css-tabs {
+    background: none repeat scroll 0 0 #F4F4F4;
+    border-bottom: 1px solid #E3E3E3;
+    height: 36px;
+    margin: 0 !important;
+    padding: 0;
+}
+
+/* single tab */
+ul.css-tabs li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* link inside the tab. uses a background image */
+ul.css-tabs a {
+    background-color: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    color: #231F20;
+    display: block;
+    float: left;
+    font-family: BebasNeue,Arial,sans-serif;
+    font-size: 16px;
+    height: 18px;
+    margin-right: 2px;
+    outline: 0 none;
+    padding: 10px 15px 5px;
+    position: relative;
+    text-decoration: none;
+    top: 0;
+	font-weight:normal; 
+}
+
+ul.css-tabs a:hover {
+	background-color:#F7F7F7;
+	color:#333;
+}
+	
+/* selected tab */
+ul.css-tabs a.current {
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #E3E3E3;
+    color: #000000;
+    cursor: default;
+}
+
+	
+/* tab pane */
+.css-panes div {
+	/*display:none;
+	border:1px solid #666;
+	border-width:0 1px 1px 1px;
+	background-color:#ddd;
+	
+	min-height:150px;*/
+	padding:5px;
+	overflow:hidden;
+		
+}
+
+
+
+
+/*END TOOLS*/
