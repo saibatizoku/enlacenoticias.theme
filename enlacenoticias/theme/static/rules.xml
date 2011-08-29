@@ -6,22 +6,7 @@
 
     <notheme if="$ajax_load" />
 
-    <theme href="home.html" css:if-content="body.template-folder_summary_view.portaltype-plone-site" />
-    <theme href="home.html" css:if-content="body.template-folder_listing.portaltype-plone-site" />
-    <theme href="home.html" css:if-content="body.template-folder_contents.portaltype-plone-site" />
-    <theme href="listing.html" css:if-content="body.template-folder_summary_view" />
-    <theme href="listing.html" css:if-content="body.template-folder_listing" />
-    <theme href="listing.html" css:if-content="body.template-folder_contents" />
-    <theme href="listing.html" css:if-content="body.template-disqus_summary_listing" />
-    <theme href="item.html" css:if-content="body.template-atct_edit" />
-    <theme href="item.html" css:if-content="body.template-manage-portlets" />
-    <theme href="item.html" css:if-content="body.portaltype-news-item" />
-    <theme href="item.html" css:if-content="body.portaltype-document" />
-    <theme href="item.html" css:if-content="body.portaltype-collective-nitf-content" />
-
-    <theme href="home.html" css:if-content="body.template-collage_view" />
-    <theme href="noads.html" css:if-content="#visual-portal-wrapper" />
-    <theme href="noads.html" if-path="edit" />
+    <theme href="index.html" />
 
     <rules css:if-content="#visual-portal-wrapper" >
         <!-- ALL TEMPLATES -->
